@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+#sun {
+  animation: sun 5s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  fill: yellow;
+}
+#tail {
+  animation: tail 0.5s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+#hair {
+  fill: purple;
+}
+#socks {
+  fill: black;
+}
+@keyframes tail {
+  from {
+    transform: rotateX(-10deg);
+  }
+  to {
+    transform: rotateY(10deg);
+  }
+}
+@keyframes sun {
+  from {
+    transform: rotateX(-10deg);
+    fill: orange;
+  }
+
+  to {
+    transform: rotateX(20deg);
+    fill: yellow;
+  }
+}
